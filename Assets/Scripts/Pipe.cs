@@ -10,6 +10,7 @@ public class Pipe : MonoBehaviour
     {
         // We will move towards left [not moving the camera]
         // Only change in x-axis
-        transform.position -= new Vector3(speed * Time.deltaTime, 0,0);
+        if (Bird.IsAlive)
+            transform.position -= new Vector3(speed * Time.deltaTime, 0,0);
     }
 }

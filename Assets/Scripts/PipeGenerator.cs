@@ -36,7 +36,7 @@ public class PipeGenerator : MonoBehaviour
 
             // Modifying X and Y position of pipe
             pipeTransform.position = new Vector3(pipeTransform.position.x + ((i+1)*PipeDistance), Random.Range(MinY,MaxY), pipeTransform.position.z);
-            pipeTransform.parent = Pipes;
+            //pipeTransform.parent = Pipes;
 
         }
     }
